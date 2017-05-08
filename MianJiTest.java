@@ -1,16 +1,16 @@
 class Mian{
-	double area(double r){  //根据半径求圆的面积
+	double area(double r){
 		return Math.PI*r*r;
 	}
-	double area(double l,double w){   //根据长、宽求矩形的面积
+	double area(double l,double w){
 		return l*w;
 	}
-	double area(double d1,double d2,double h){ //根据上下底和高求梯形的面积
+	double area(double d1,double d2,double h){
 		return (d1+d2)*h/2;
 	}
 }	
 public class MianJiTest{
-	public static void main(String args[]){  //根据参数个数的不同调用不同的成员方法
+	public static void main(String args[]){
 		Mian a=new Mian();
 		double s1=a.area(3.0);  
 		System.out.println("1个参数：圆面积为="+s1);
